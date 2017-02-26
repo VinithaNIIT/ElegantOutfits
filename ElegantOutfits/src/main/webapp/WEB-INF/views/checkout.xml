@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.4.xsd">
+                          
+	<var name="shippingaddress" class="com.niit.model.ShippingAddress"/> 
+	<var name="billingaddress" class="com.niit.model.BillingAddress"/>  
+	<var name="cart" class="com.niit.model.Cart"/>  
+	<var name="order" class="com.niit.model.Orders"/>
+	<var name="paymentmethod" class="com.niit.model.PaymentMethod"/>                                                      
+
+	<!-- Executed when webFlow is triggered -->
+	<on-start>
+	<!-- demohandler is java class available through annotated Demohandler.java class.here we are calling it’s initFlow() method. -->
+	  <evaluate expression="orderWebFlow.initFlow()" result="flowScope.order"/>
+	</on-start>
+
+	 <!-- if not specified the first view state is the starting state -->
+	<view-state id="flowExecutor" view="shippingaddress" model="shippingaddress">
+	   <transition on="submitShippingAddress" to="shippingdetails"/>
+	</view-state>
+
+	<action-state id="shippingdetails">
+		<evaluate expression="orderWebFlow.addShippingAddress(flowScope.order,shippingaddress)"></evaluate>
+		<transition on="success" to="viewbillingdetails" />
+		<transition on="failure" to="cart_checkout" />
+	</action-state>
+	<view-state id="cart_checkout" view="cart" model="cart"/>
+
+	<view-state id="viewbillingdetails" view="billingaddress" model="billingaddress">
+	   <transition on="submitBillingAddress" to="billingdetails"/>
+	   <transition on="backtoshippingaddress" to="cart_checkout"/>
+	</view-state>
+	
+	<action-state id="billingdetails">
+		<evaluate expression="orderWebFlow.addBillingAddress(flowScope.order,billingaddress)"></evaluate>
+		<transition on="success" to="viewpaymentdetails" />
+		</action-state>
+		
+		<view-state id="viewpaymentdetails" view="paymentmethod" model="paymentmethod">
+	   <transition on="submitPaymentMethod" to="paymentdetails"/>
+	   
+	</view-state>
+	
+	<action-state id="paymentdetails">
+		<evaluate expression="orderWebFlow.addPaymentMethod(flowScope.order,paymentmethod)"></evaluate>
+		<transition on="success" to="orderconfirm" />
+		</action-state>
+		
+		<view-state id="orderconfirm" view="orderconfirmed" >
+	   <transition on="finalhome" to="tohome"/>
+	   
+	</view-state>
+	<end-state id="tohome" view="externalRedirect:contextRelative:/"></end-state>
+	
+
+	<!-- these events are available in every state-->
+	<global-transitions>
+		<transition on="home" to="toHome" />
+		<transition on="error" to="toException" />
+	</global-transitions>
+</flow>

@@ -1,0 +1,1634 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="3" name="com.niit.elegantoutfitsbackend.CategoryTestCase" time="2.001" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_05\jre\bin"/>
+    <property name="java.vm.version" value="25.5-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\Elegant Outfits\ElegantOutfitsBackEnd"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Elegant Outfits\ElegantOutfitsBackEnd"/>
+    <property name="java.runtime.version" value="1.8.0_05-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_05\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Vini\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Users\Vini\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8990709411197746136.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_05\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.8.0_05\bin;E:\Softwares\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Vini;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Vini"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Vini"/>
+    <property name="java.class.path" value="/C:/Users/Vini/Desktop/eclipse-jee-mars-2-win32-x86_64/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_05\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_05"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_05\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_05\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_05\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\Elegant Outfits\ElegantOutfitsBackEnd\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.niit.elegantoutfitsbackend.CategoryTestCase" name="createCategoryTestCase" time="0.864">
+    <failure message="create Category Test Case expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: create Category Test Case expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at com.niit.elegantoutfitsbackend.CategoryTestCase.createCategoryTestCase(CategoryTestCase.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>11:42:25.039 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+11:42:25.135 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+11:42:25.147 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+11:42:25.161 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+11:42:25.673 [main] INFO org.hibernate.Version - HHH000412: Hibernate Core {5.1.0.Final}
+11:42:25.687 [main] INFO org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+11:42:25.698 [main] INFO org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+11:42:25.770 [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+11:42:25.851 [main] DEBUG org.hibernate.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+11:42:25.855 [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+11:42:25.950 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+11:42:26.035 [main] INFO org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+11:42:26.193 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@5852c06f
+11:42:26.204 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@5852c06f
+11:42:26.206 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@5852c06f
+11:42:26.212 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@376a0d86
+11:42:26.219 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@4c2bb6e0
+11:42:26.224 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@7283d3eb
+11:42:26.234 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -&gt; org.hibernate.type.ByteType@21d03963
+11:42:26.236 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -&gt; org.hibernate.type.ByteType@21d03963
+11:42:26.238 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@21d03963
+11:42:26.244 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -&gt; org.hibernate.type.CharacterType@33f676f6
+11:42:26.245 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -&gt; org.hibernate.type.CharacterType@33f676f6
+11:42:26.247 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@33f676f6
+11:42:26.259 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -&gt; org.hibernate.type.ShortType@81d9a72
+11:42:26.261 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -&gt; org.hibernate.type.ShortType@81d9a72
+11:42:26.262 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@81d9a72
+11:42:26.267 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -&gt; org.hibernate.type.IntegerType@70e38ce1
+11:42:26.268 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -&gt; org.hibernate.type.IntegerType@70e38ce1
+11:42:26.270 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@70e38ce1
+11:42:26.277 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -&gt; org.hibernate.type.LongType@163370c2
+11:42:26.278 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -&gt; org.hibernate.type.LongType@163370c2
+11:42:26.279 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@163370c2
+11:42:26.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -&gt; org.hibernate.type.FloatType@51bd8b5c
+11:42:26.288 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -&gt; org.hibernate.type.FloatType@51bd8b5c
+11:42:26.288 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@51bd8b5c
+11:42:26.295 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -&gt; org.hibernate.type.DoubleType@456d6c1e
+11:42:26.296 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -&gt; org.hibernate.type.DoubleType@456d6c1e
+11:42:26.297 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@456d6c1e
+11:42:26.308 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@15f47664
+11:42:26.309 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@15f47664
+11:42:26.316 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@a1f72f5
+11:42:26.317 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@a1f72f5
+11:42:26.322 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -&gt; org.hibernate.type.StringType@2dc9b0f5
+11:42:26.324 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@2dc9b0f5
+11:42:26.328 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@56dc1551
+11:42:26.332 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@43015c69
+11:42:26.338 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -&gt; org.hibernate.type.UrlType@2415fc55
+11:42:26.338 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@2415fc55
+11:42:26.348 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -&gt; org.hibernate.type.DateType@16c069df
+11:42:26.351 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@16c069df
+11:42:26.361 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -&gt; org.hibernate.type.TimeType@6950ed69
+11:42:26.377 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@6950ed69
+11:42:26.385 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@42e25b0b
+11:42:26.385 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@42e25b0b
+11:42:26.387 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@42e25b0b
+11:42:26.396 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@2205a05d
+11:42:26.401 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@5f20155b
+11:42:26.405 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@5f20155b
+11:42:26.407 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@5f20155b
+11:42:26.412 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@3fce8fd9
+11:42:26.446 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -&gt; org.hibernate.type.LocaleType@23202fce
+11:42:26.448 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@23202fce
+11:42:26.455 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@7f284218
+11:42:26.457 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@7f284218
+11:42:26.462 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@2cb2fc20
+11:42:26.463 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@2cb2fc20
+11:42:26.485 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -&gt; org.hibernate.type.ClassType@495ee280
+11:42:26.490 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@495ee280
+11:42:26.499 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@748741cb
+11:42:26.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@748741cb
+11:42:26.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@1130520d
+11:42:26.511 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -&gt; org.hibernate.type.BinaryType@7a3793c7
+11:42:26.512 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@7a3793c7
+11:42:26.513 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -&gt; org.hibernate.type.BinaryType@7a3793c7
+11:42:26.519 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@5456afaa
+11:42:26.520 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@5456afaa
+11:42:26.521 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@5456afaa
+11:42:26.526 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -&gt; org.hibernate.type.ImageType@4a00d9cf
+11:42:26.531 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@4c012563
+11:42:26.533 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@4c012563
+11:42:26.534 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@4c012563
+11:42:26.539 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@329dbdbf
+11:42:26.540 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@329dbdbf
+11:42:26.543 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@329dbdbf
+11:42:26.549 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -&gt; org.hibernate.type.TextType@479cbee5
+11:42:26.554 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -&gt; org.hibernate.type.NTextType@12299890
+11:42:26.591 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -&gt; org.hibernate.type.BlobType@1787bc24
+11:42:26.592 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@1787bc24
+11:42:26.595 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@53b7f657
+11:42:26.638 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -&gt; org.hibernate.type.ClobType@6986852
+11:42:26.639 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@6986852
+11:42:26.655 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -&gt; org.hibernate.type.NClobType@135606db
+11:42:26.655 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@135606db
+11:42:26.658 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@4f74980d
+11:42:26.661 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@2a3888c1
+11:42:26.667 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@1722011b
+11:42:26.703 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -&gt; org.hibernate.type.ObjectType@7c51f34b
+11:42:26.705 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@7c51f34b
+11:42:26.708 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@61eaec38
+11:42:26.722 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@125290e5
+11:42:26.724 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@6fa34d52
+11:42:26.724 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@57576994
+11:42:26.726 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@616ac46a
+11:42:26.733 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@67b9b51a
+11:42:26.739 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@1205bd62
+11:42:26.740 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@7ef27d7f
+11:42:27.093 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database -&gt;
+       name : H2
+    version : 1.4.191 (2016-01-21)
+      major : 1
+      minor : 4
+11:42:27.094 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver -&gt;
+       name : H2 JDBC Driver
+    version : 1.4.191 (2016-01-21)
+      major : 1
+      minor : 4
+11:42:27.095 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.0
+11:42:27.158 [main] INFO org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+11:42:27.262 [main] DEBUG org.hibernate.engine.jdbc.cursor.internal.StandardRefCursorSupport - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+11:42:28.062 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+11:42:28.064 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+11:42:28.069 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+11:42:28.071 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+11:42:28.072 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+11:42:28.077 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+11:42:28.079 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+11:42:28.084 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+11:42:28.088 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+11:42:28.090 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+11:42:28.092 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+11:42:28.094 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+11:42:28.095 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+11:42:28.099 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+11:42:28.351 [main] DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+11:42:28.552 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.niit.model.User
+11:42:28.666 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
+11:42:28.708 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name User
+11:42:28.735 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity com.niit.model.User on table User
+11:42:28.847 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=userid, insertable=true, updatable=true, unique=false}
+11:42:28.861 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property userid with lazy=false
+11:42:28.870 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:userid]
+11:42:28.876 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for userid
+11:42:28.885 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property userid
+11:42:28.897 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=email, insertable=true, updatable=true, unique=false}
+11:42:28.899 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+11:42:28.900 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:email]
+11:42:28.900 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for email
+11:42:28.901 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property email
+11:42:28.902 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=enabled, insertable=true, updatable=true, unique=false}
+11:42:28.903 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property enabled with lazy=false
+11:42:28.904 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:enabled]
+11:42:28.905 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for enabled
+11:42:28.906 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property enabled
+11:42:28.907 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=firstname, insertable=true, updatable=true, unique=false}
+11:42:28.909 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstname with lazy=false
+11:42:28.910 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:firstname]
+11:42:28.911 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for firstname
+11:42:28.912 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property firstname
+11:42:28.913 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=mobile, insertable=true, updatable=true, unique=false}
+11:42:28.914 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property mobile with lazy=false
+11:42:28.916 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:mobile]
+11:42:28.918 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for mobile
+11:42:28.919 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property mobile
+11:42:28.922 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=password, insertable=true, updatable=true, unique=false}
+11:42:28.924 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property password with lazy=false
+11:42:28.925 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:password]
+11:42:28.925 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for password
+11:42:28.926 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property password
+11:42:28.928 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=role, insertable=true, updatable=true, unique=false}
+11:42:28.930 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property role with lazy=false
+11:42:28.931 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:role]
+11:42:28.933 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for role
+11:42:28.934 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property role
+11:42:28.937 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User), mappingColumn=username, insertable=true, updatable=true, unique=false}
+11:42:28.940 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property username with lazy=false
+11:42:28.941 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.User:username]
+11:42:28.942 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for username
+11:42:28.944 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property username
+11:42:28.951 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.niit.model.Category
+11:42:28.952 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
+11:42:28.956 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Category
+11:42:28.959 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity com.niit.model.Category on table Category
+11:42:29.081 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Category), mappingColumn=categoryid, insertable=true, updatable=true, unique=false}
+11:42:29.082 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property categoryid with lazy=false
+11:42:29.084 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Category:categoryid]
+11:42:29.085 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for categoryid
+11:42:29.087 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property categoryid
+11:42:29.116 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Category), mappingColumn=categorydescription, insertable=true, updatable=true, unique=false}
+11:42:29.117 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property categorydescription with lazy=false
+11:42:29.118 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Category:categorydescription]
+11:42:29.121 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for categorydescription
+11:42:29.122 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property categorydescription
+11:42:29.124 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Category), mappingColumn=categoryname, insertable=true, updatable=true, unique=false}
+11:42:29.125 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property categoryname with lazy=false
+11:42:29.129 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Category:categoryname]
+11:42:29.132 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for categoryname
+11:42:29.133 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property categoryname
+11:42:29.142 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.niit.model.Supplier
+11:42:29.145 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
+11:42:29.153 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Supplier
+11:42:29.156 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity com.niit.model.Supplier on table Supplier
+11:42:29.159 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Supplier), mappingColumn=supplierid, insertable=true, updatable=true, unique=false}
+11:42:29.161 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property supplierid with lazy=false
+11:42:29.162 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Supplier:supplierid]
+11:42:29.163 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for supplierid
+11:42:29.164 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property supplierid
+11:42:29.167 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Supplier), mappingColumn=supplieraddress, insertable=true, updatable=true, unique=false}
+11:42:29.168 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property supplieraddress with lazy=false
+11:42:29.172 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Supplier:supplieraddress]
+11:42:29.173 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for supplieraddress
+11:42:29.174 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property supplieraddress
+11:42:29.180 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Supplier), mappingColumn=suppliername, insertable=true, updatable=true, unique=false}
+11:42:29.201 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property suppliername with lazy=false
+11:42:29.208 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Supplier:suppliername]
+11:42:29.209 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for suppliername
+11:42:29.210 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property suppliername
+11:42:29.210 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.niit.model.Product
+11:42:29.211 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
+11:42:29.212 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Product
+11:42:29.213 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity com.niit.model.Product on table Product
+11:42:29.228 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Product), mappingColumn=productid, insertable=true, updatable=true, unique=false}
+11:42:29.229 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property productid with lazy=false
+11:42:29.231 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Product:productid]
+11:42:29.232 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for productid
+11:42:29.233 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property productid
+11:42:29.234 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Product), mappingColumn=categoryid, insertable=true, updatable=true, unique=false}
+11:42:29.235 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property categoryid with lazy=false
+11:42:29.236 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Product:categoryid]
+11:42:29.237 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for categoryid
+11:42:29.238 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property categoryid
+11:42:29.239 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Product), mappingColumn=productdescription, insertable=true, updatable=true, unique=false}
+11:42:29.241 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property productdescription with lazy=false
+11:42:29.242 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Product:productdescription]
+11:42:29.242 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for productdescription
+11:42:29.243 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property productdescription
+11:42:29.244 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Product), mappingColumn=productname, insertable=true, updatable=true, unique=false}
+11:42:29.245 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property productname with lazy=false
+11:42:29.247 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Product:productname]
+11:42:29.248 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for productname
+11:42:29.250 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property productname
+11:42:29.252 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Product), mappingColumn=productprice, insertable=true, updatable=true, unique=false}
+11:42:29.253 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property productprice with lazy=false
+11:42:29.254 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Product:productprice]
+11:42:29.257 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for productprice
+11:42:29.258 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property productprice
+11:42:29.260 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Product), mappingColumn=quantity, insertable=true, updatable=true, unique=false}
+11:42:29.261 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property quantity with lazy=false
+11:42:29.262 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Product:quantity]
+11:42:29.263 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for quantity
+11:42:29.265 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property quantity
+11:42:29.268 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Product), mappingColumn=supplierid, insertable=true, updatable=true, unique=false}
+11:42:29.269 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property supplierid with lazy=false
+11:42:29.271 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.niit.model.Product:supplierid]
+11:42:29.271 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for supplierid
+11:42:29.271 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property supplierid
+11:42:29.274 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for userid
+11:42:29.275 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+11:42:29.276 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for enabled
+11:42:29.277 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for firstname
+11:42:29.278 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for mobile
+11:42:29.278 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for password
+11:42:29.281 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for role
+11:42:29.284 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for username
+11:42:29.285 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for categoryid
+11:42:29.286 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for categorydescription
+11:42:29.288 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for categoryname
+11:42:29.296 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for supplierid
+11:42:29.298 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for supplieraddress
+11:42:29.299 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for suppliername
+11:42:29.300 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for productid
+11:42:29.310 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for categoryid
+11:42:29.311 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for productdescription
+11:42:29.312 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for productname
+11:42:29.314 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for productprice
+11:42:29.318 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for quantity
+11:42:29.322 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for supplierid
+11:42:29.328 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [userid] to be non-null as it is part of the primary key for table [user]
+11:42:29.330 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [categoryid] to be non-null as it is part of the primary key for table [category]
+11:42:29.331 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [supplierid] to be non-null as it is part of the primary key for table [supplier]
+11:42:29.332 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [productid] to be non-null as it is part of the primary key for table [product]
+11:42:29.456 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Building session factory
+11:42:29.461 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+11:42:29.471 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): disabled
+11:42:29.472 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+11:42:29.473 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+11:42:29.474 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+11:42:29.476 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+11:42:29.477 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+11:42:29.478 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+11:42:29.479 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+11:42:29.480 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+11:42:29.481 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: null
+11:42:29.482 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+11:42:29.483 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+11:42:29.483 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+11:42:29.483 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+11:42:29.484 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+11:42:29.484 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+11:42:29.484 [main] DEBUG org.hibernate.cfg.Settings - JPA query language strict compliance: disabled
+11:42:29.485 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+11:42:29.485 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: enabled
+11:42:29.486 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+11:42:29.489 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@4bff1903
+11:42:29.490 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+11:42:29.491 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+11:42:29.531 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+11:42:29.532 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+11:42:29.533 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+11:42:29.534 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+11:42:29.535 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+11:42:29.539 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+11:42:29.540 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+11:42:29.541 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+11:42:29.545 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+11:42:29.546 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: ON_CLOSE
+11:42:29.547 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+11:42:29.782 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+11:42:29.783 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, java.vm.version=25.5-b02, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_05\jre\bin, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@18f20260, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, hibernate.classLoaders=[sun.misc.Launcher$AppClassLoader@6bc7c054], java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, sun.os.patch.level=, user.script=, user.country=IN, sun.java.launcher=SUN_STANDARD, java.vm.specification.name=Java Virtual Machine Specification, user.dir=E:\Elegant Outfits\ElegantOutfitsBackEnd, java.runtime.version=1.8.0_05-b13, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, basedir=E:\Elegant Outfits\ElegantOutfitsBackEnd, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, os.arch=amd64, hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_05\jre\lib\endorsed, surefire.real.class.path=E:\Elegant Outfits\ElegantOutfitsBackEnd\target\surefire\surefirebooter252374114273313004.jar, java.io.tmpdir=C:\Users\Vini\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1252, hibernate.connection.datasource=org.springframework.jdbc.datasource.DriverManagerDataSource@3541cb24, java.library.path=C:\Program Files\Java\jdk1.8.0_05\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.8.0_05\bin;E:\Softwares\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Vini;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;., surefire.test.class.path=E:\Elegant Outfits\ElegantOutfitsBackEnd\target\test-classes;E:\Elegant Outfits\ElegantOutfitsBackEnd\target\classes;C:\Users\Vini\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Vini\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-core\4.3.1.RELEASE\spring-core-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-context\4.3.1.RELEASE\spring-context-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-aop\4.3.1.RELEASE\spring-aop-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-expression\4.3.1.RELEASE\spring-expression-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-beans\4.3.1.RELEASE\spring-beans-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\hibernate\hibernate-core\5.1.0.Final\hibernate-core-5.1.0.Final.jar;C:\Users\Vini\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\Vini\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Vini\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\Vini\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Vini\.m2\repository\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar;C:\Users\Vini\.m2\repository\org\jboss\jandex\2.0.0.Final\jandex-2.0.0.Final.jar;C:\Users\Vini\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\Vini\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Vini\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Vini\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\Vini\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Vini\.m2\repository\org\hibernate\hibernate-validator\5.1.0.Final\hibernate-validator-5.1.0.Final.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-web\4.3.1.RELEASE\spring-web-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\com\h2database\h2\1.4.191\h2-1.4.191.jar;C:\Users\Vini\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-jdbc\4.3.1.RELEASE\spring-jdbc-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-tx\4.3.1.RELEASE\spring-tx-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-orm\4.3.1.RELEASE\spring-orm-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\apache\commons\commons-dbcp2\2.1.1\commons-dbcp2-2.1.1.jar;C:\Users\Vini\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\Vini\.m2\repository\commons-fileupload\commons-fileupload\1.3.1\commons-fileupload-1.3.1.jar;C:\Users\Vini\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\Vini\.m2\repository\taglibs\standard\1.1.2\standard-1.1.2.jar;C:\Users\Vini\.m2\repository\ch\qos\logback\logback-classic\1.1.7\logback-classic-1.1.7.jar;C:\Users\Vini\.m2\repository\ch\qos\logback\logback-core\1.1.7\logback-core-1.1.7.jar;C:\Users\Vini\.m2\repository\org\slf4j\slf4j-api\1.7.20\slf4j-api-1.7.20.jar;, java.class.version=52.0, java.specification.name=Java Platform API Specification, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\Vini, user.timezone=Asia/Calcutta, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.8, user.name=Vini, java.class.path=E:\Elegant Outfits\ElegantOutfitsBackEnd\target\test-classes;E:\Elegant Outfits\ElegantOutfitsBackEnd\target\classes;C:\Users\Vini\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Vini\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-core\4.3.1.RELEASE\spring-core-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-context\4.3.1.RELEASE\spring-context-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-aop\4.3.1.RELEASE\spring-aop-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-expression\4.3.1.RELEASE\spring-expression-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-beans\4.3.1.RELEASE\spring-beans-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\hibernate\hibernate-core\5.1.0.Final\hibernate-core-5.1.0.Final.jar;C:\Users\Vini\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\Vini\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Vini\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\Vini\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Vini\.m2\repository\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar;C:\Users\Vini\.m2\repository\org\jboss\jandex\2.0.0.Final\jandex-2.0.0.Final.jar;C:\Users\Vini\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\Vini\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Vini\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Vini\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\Vini\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Vini\.m2\repository\org\hibernate\hibernate-validator\5.1.0.Final\hibernate-validator-5.1.0.Final.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-web\4.3.1.RELEASE\spring-web-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\com\h2database\h2\1.4.191\h2-1.4.191.jar;C:\Users\Vini\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-jdbc\4.3.1.RELEASE\spring-jdbc-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-tx\4.3.1.RELEASE\spring-tx-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\springframework\spring-orm\4.3.1.RELEASE\spring-orm-4.3.1.RELEASE.jar;C:\Users\Vini\.m2\repository\org\apache\commons\commons-dbcp2\2.1.1\commons-dbcp2-2.1.1.jar;C:\Users\Vini\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\Vini\.m2\repository\commons-fileupload\commons-fileupload\1.3.1\commons-fileupload-1.3.1.jar;C:\Users\Vini\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\Vini\.m2\repository\taglibs\standard\1.1.2\standard-1.1.2.jar;C:\Users\Vini\.m2\repository\ch\qos\logback\logback-classic\1.1.7\logback-classic-1.1.7.jar;C:\Users\Vini\.m2\repository\ch\qos\logback\logback-core\1.1.7\logback-core-1.1.7.jar;C:\Users\Vini\.m2\repository\org\slf4j\slf4j-api\1.7.20\slf4j-api-1.7.20.jar;, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, sun.java.command=E:\Elegant Outfits\ElegantOutfitsBackEnd\target\surefire\surefirebooter252374114273313004.jar E:\Elegant Outfits\ElegantOutfitsBackEnd\target\surefire\surefire3082519972543752300tmp E:\Elegant Outfits\ElegantOutfitsBackEnd\target\surefire\surefire_04050830577572699577tmp, java.home=C:\Program Files\Java\jdk1.8.0_05\jre, hibernate.dialect=org.hibernate.dialect.H2Dialect, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_05, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_05\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_05\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_05\jre\classes, java.vendor=Oracle Corporation, localRepository=C:\Users\Vini\.m2\repository, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+11:42:30.160 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.0.Final
+11:42:30.220 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing &apos;getPersistenceUtil&apos;. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+11:42:30.226 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+11:42:30.257 [main] DEBUG org.hibernate.cfg.beanvalidation.TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+11:42:30.259 [main] DEBUG org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+11:42:30.538 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.User] is safe
+11:42:30.544 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.User
+11:42:30.729 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.User] is safe
+11:42:30.736 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.User
+11:42:31.391 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.Category] is safe
+11:42:31.392 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.Category
+11:42:31.394 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.Category] is safe
+11:42:31.415 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.Category
+11:42:31.510 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.Supplier] is safe
+11:42:31.511 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.Supplier
+11:42:31.512 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.Supplier] is safe
+11:42:31.696 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.Supplier
+11:42:31.719 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.Product] is safe
+11:42:31.720 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.Product
+11:42:31.721 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.niit.model.Product] is safe
+11:42:31.722 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.niit.model.Product
+11:42:31.830 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.niit.model.User
+11:42:31.830 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select userid from User where userid =?
+11:42:31.831 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select user_.userid, user_.email as email2_3_, user_.enabled as enabled3_3_, user_.firstname as firstnam4_3_, user_.mobile as mobile5_3_, user_.password as password6_3_, user_.role as role7_3_, user_.username as username8_3_ from User user_ where user_.userid=?
+11:42:31.832 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into User (email, enabled, firstname, mobile, password, role, username, userid) values (?, ?, ?, ?, ?, ?, ?, ?)
+11:42:31.832 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update User set email=?, enabled=?, firstname=?, mobile=?, password=?, role=?, username=? where userid=?
+11:42:31.833 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from User where userid=?
+11:42:32.102 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e886a5b]
+11:42:32.108 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.109 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.109 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.109 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.110 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.110 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.110 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.111 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.457 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:32.534 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:32.547 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [NONE]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=?
+11:42:32.549 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1af7f54a]
+11:42:32.550 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.551 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.552 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.552 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.552 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.553 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.553 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.554 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.556 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:32.559 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:32.561 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [READ]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=?
+11:42:32.562 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@436390f4]
+11:42:32.563 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.567 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.568 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.568 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.569 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.570 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.607 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.608 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.624 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:32.627 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:32.628 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [UPGRADE]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=? for update
+11:42:32.629 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68ed96ca]
+11:42:32.630 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.631 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.824 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.825 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.826 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.827 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.828 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.829 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.835 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:32.862 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:32.864 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [UPGRADE_NOWAIT]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=? for update
+11:42:32.870 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3228d990]
+11:42:32.871 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.874 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.876 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.877 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.877 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.878 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.879 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.882 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.890 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:32.892 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:32.894 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [UPGRADE_SKIPLOCKED]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=? for update
+11:42:32.895 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@50b8ae8d]
+11:42:32.944 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.945 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.946 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.947 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.947 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.948 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.949 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.950 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.951 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:32.954 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:32.955 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [FORCE]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=? for update
+11:42:32.958 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@51c929ae]
+11:42:32.959 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.960 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.963 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.964 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.966 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.967 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.967 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.968 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.969 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:32.971 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:32.973 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [PESSIMISTIC_READ]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=? for update
+11:42:32.974 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29d2d081]
+11:42:32.975 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:32.976 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:32.976 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:32.977 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:32.978 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:32.978 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:32.979 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:32.979 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:32.980 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.075 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:33.086 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [PESSIMISTIC_WRITE]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=? for update
+11:42:33.087 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@58783f6c]
+11:42:33.092 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:33.093 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:33.146 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:33.147 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:33.147 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:33.147 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:33.148 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:33.148 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.149 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.151 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:33.152 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=? for update
+11:42:33.153 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@512d92b]
+11:42:33.154 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:33.154 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:33.154 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:33.155 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:33.155 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:33.156 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:33.156 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:33.156 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.157 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.160 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:33.161 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [OPTIMISTIC]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=?
+11:42:33.162 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7bdf6bb7]
+11:42:33.163 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+11:42:33.163 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : enabled
+11:42:33.164 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+11:42:33.164 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+11:42:33.165 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+11:42:33.168 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : role
+11:42:33.169 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+11:42:33.170 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.172 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.174 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.User, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userid1_3_0_}
+
+11:42:33.176 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=?
+11:42:33.730 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.niit.model.User: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=?
+11:42:33.734 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.niit.model.User: select user0_.userid as userid1_3_0_, user0_.email as email2_3_0_, user0_.enabled as enabled3_3_0_, user0_.firstname as firstnam4_3_0_, user0_.mobile as mobile5_3_0_, user0_.password as password6_3_0_, user0_.role as role7_3_0_, user0_.username as username8_3_0_ from User user0_ where user0_.userid=?
+11:42:33.737 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.niit.model.Category
+11:42:33.737 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select categoryid from Category where categoryid =?
+11:42:33.741 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select category_.categoryid, category_.categorydescription as category2_0_, category_.categoryname as category3_0_ from Category category_ where category_.categoryid=?
+11:42:33.742 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Category (categorydescription, categoryname, categoryid) values (?, ?, ?)
+11:42:33.742 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Category set categorydescription=?, categoryname=? where categoryid=?
+11:42:33.743 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Category where categoryid=?
+11:42:33.745 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a7704c]
+11:42:33.746 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.747 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.748 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.749 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.755 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.756 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [NONE]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+11:42:33.757 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@619bd14c]
+11:42:33.758 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.759 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.760 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.761 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.767 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.768 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [READ]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+11:42:33.769 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a23a01d]
+11:42:33.770 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.771 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.779 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.782 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.784 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.785 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [UPGRADE]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=? for update
+11:42:33.787 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7561db12]
+11:42:33.788 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.788 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.789 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.791 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.792 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.793 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [UPGRADE_NOWAIT]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=? for update
+11:42:33.795 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@24b52d3e]
+11:42:33.796 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.799 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.800 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.805 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.823 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.825 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [UPGRADE_SKIPLOCKED]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=? for update
+11:42:33.826 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6e9c413e]
+11:42:33.828 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.830 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.832 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.835 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.837 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.858 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [FORCE]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=? for update
+11:42:33.859 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5af5def9]
+11:42:33.860 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.867 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.868 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.870 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.872 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.875 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [PESSIMISTIC_READ]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=? for update
+11:42:33.876 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36dce7ed]
+11:42:33.880 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.881 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.892 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.898 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.900 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.901 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [PESSIMISTIC_WRITE]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=? for update
+11:42:33.902 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@33d05366]
+11:42:33.903 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.904 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.905 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.907 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.908 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.910 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [PESSIMISTIC_FORCE_INCREMENT]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=? for update
+11:42:33.911 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7692cd34]
+11:42:33.912 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.913 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.915 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.916 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.926 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.927 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [OPTIMISTIC]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+11:42:33.928 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@32c0915e]
+11:42:33.929 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categorydescription
+11:42:33.930 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryname
+11:42:33.932 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:33.934 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:33.936 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Category, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Category)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {category1_0_0_}
+
+11:42:33.937 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Category [OPTIMISTIC_FORCE_INCREMENT]: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+11:42:33.938 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.niit.model.Category: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+11:42:33.940 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.niit.model.Category: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+11:42:33.946 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.niit.model.Supplier
+11:42:33.947 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select supplierid from Supplier where supplierid =?
+11:42:33.948 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select supplier_.supplierid, supplier_.supplieraddress as supplier2_2_, supplier_.suppliername as supplier3_2_ from Supplier supplier_ where supplier_.supplierid=?
+11:42:33.949 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Supplier (supplieraddress, suppliername, supplierid) values (?, ?, ?)
+11:42:33.987 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Supplier set supplieraddress=?, suppliername=? where supplierid=?
+11:42:33.988 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Supplier where supplierid=?
+11:42:33.988 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@70f43b45]
+11:42:33.991 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:33.999 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.000 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.001 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.006 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.009 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [NONE]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=?
+11:42:34.010 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@10ad20cb]
+11:42:34.011 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.011 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.012 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.013 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.014 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.015 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [READ]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=?
+11:42:34.016 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c282004]
+11:42:34.017 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.018 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.019 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.019 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.022 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.023 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [UPGRADE]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=? for update
+11:42:34.025 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7bfc3126]
+11:42:34.026 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.027 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.027 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.029 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.031 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.032 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [UPGRADE_NOWAIT]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=? for update
+11:42:34.033 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53bc1328]
+11:42:34.034 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.034 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.035 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.036 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.037 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.038 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [UPGRADE_SKIPLOCKED]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=? for update
+11:42:34.039 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3c1e3314]
+11:42:34.040 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.040 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.040 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.041 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.043 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.044 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [FORCE]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=? for update
+11:42:34.045 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@78e16155]
+11:42:34.046 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.047 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.048 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.049 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.052 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.053 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [PESSIMISTIC_READ]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=? for update
+11:42:34.053 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1968a49c]
+11:42:34.055 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.055 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.056 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.057 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.058 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.059 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [PESSIMISTIC_WRITE]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=? for update
+11:42:34.060 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19868320]
+11:42:34.061 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.061 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.061 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.062 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.068 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.070 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [PESSIMISTIC_FORCE_INCREMENT]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=? for update
+11:42:34.071 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c20be82]
+11:42:34.072 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.072 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.073 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.074 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.078 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.079 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [OPTIMISTIC]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=?
+11:42:34.080 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3ef41c66]
+11:42:34.081 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplieraddress
+11:42:34.082 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : suppliername
+11:42:34.083 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.096 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.102 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Supplier)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Supplier, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Supplier)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Supplier)
+          - SQL table alias mapping - supplier0_
+          - alias suffix - 0_
+          - suffixed key columns - {supplier1_2_0_}
+
+11:42:34.129 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Supplier [OPTIMISTIC_FORCE_INCREMENT]: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=?
+11:42:34.131 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.niit.model.Supplier: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=?
+11:42:34.148 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.niit.model.Supplier: select supplier0_.supplierid as supplier1_2_0_, supplier0_.supplieraddress as supplier2_2_0_, supplier0_.suppliername as supplier3_2_0_ from Supplier supplier0_ where supplier0_.supplierid=?
+11:42:34.151 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.niit.model.Product
+11:42:34.152 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select productid from Product where productid =?
+11:42:34.153 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select product_.productid, product_.categoryid as category2_1_, product_.productdescription as productd3_1_, product_.productname as productn4_1_, product_.productprice as productp5_1_, product_.quantity as quantity6_1_, product_.supplierid as supplier7_1_ from Product product_ where product_.productid=?
+11:42:34.154 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Product (categoryid, productdescription, productname, productprice, quantity, supplierid, productid) values (?, ?, ?, ?, ?, ?, ?)
+11:42:34.155 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Product set categoryid=?, productdescription=?, productname=?, productprice=?, quantity=?, supplierid=? where productid=?
+11:42:34.158 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Product where productid=?
+11:42:34.159 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@622ef26a]
+11:42:34.160 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.161 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.162 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.163 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.164 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.164 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.165 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.167 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.169 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.171 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [NONE]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=?
+11:42:34.172 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f577419]
+11:42:34.174 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.176 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.177 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.178 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.178 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.179 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.180 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.181 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.183 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.185 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [READ]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=?
+11:42:34.186 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d526ad9]
+11:42:34.187 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.187 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.188 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.189 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.189 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.190 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.191 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.192 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.196 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.197 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [UPGRADE]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=? for update
+11:42:34.199 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6a175569]
+11:42:34.200 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.201 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.202 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.203 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.203 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.205 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.210 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.278 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.285 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.286 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [UPGRADE_NOWAIT]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=? for update
+11:42:34.287 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3f3c966c]
+11:42:34.288 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.289 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.291 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.292 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.293 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.293 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.294 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.298 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.299 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.301 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [UPGRADE_SKIPLOCKED]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=? for update
+11:42:34.302 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4102b1b1]
+11:42:34.303 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.304 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.304 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.305 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.305 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.306 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.307 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.308 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.311 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.312 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [FORCE]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=? for update
+11:42:34.313 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a71c100]
+11:42:34.314 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.315 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.316 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.316 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.317 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.318 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.319 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.327 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.329 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.331 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [PESSIMISTIC_READ]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=? for update
+11:42:34.332 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f325091]
+11:42:34.333 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.334 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.335 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.335 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.336 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.337 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.338 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.341 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.343 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.344 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [PESSIMISTIC_WRITE]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=? for update
+11:42:34.347 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77b325b3]
+11:42:34.348 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.397 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.398 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.398 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.399 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.400 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.425 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.443 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.444 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.445 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [PESSIMISTIC_FORCE_INCREMENT]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=? for update
+11:42:34.447 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e8e8651]
+11:42:34.447 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.449 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.449 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.462 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.463 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.463 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.464 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.467 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.476 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.477 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [OPTIMISTIC]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=?
+11:42:34.478 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@271f18d3]
+11:42:34.479 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : categoryid
+11:42:34.480 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productdescription
+11:42:34.481 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productname
+11:42:34.482 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productprice
+11:42:34.482 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : quantity
+11:42:34.482 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : supplierid
+11:42:34.483 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+11:42:34.485 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+11:42:34.487 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.niit.model.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.niit.model.Product, querySpaceUid=&lt;gen:0&gt;, path=com.niit.model.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.niit.model.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {producti1_1_0_}
+
+11:42:34.487 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.niit.model.Product [OPTIMISTIC_FORCE_INCREMENT]: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=?
+11:42:34.489 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.niit.model.Product: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=?
+11:42:34.490 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.niit.model.Product: select product0_.productid as producti1_1_0_, product0_.categoryid as category2_1_0_, product0_.productdescription as productd3_1_0_, product0_.productname as productn4_1_0_, product0_.productprice as productp5_1_0_, product0_.quantity as quantity6_1_0_, product0_.supplierid as supplier7_1_0_ from Product product0_ where product0_.productid=?
+11:42:34.491 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+11:42:34.788 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : Category
+11:42:34.838 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : Product
+11:42:34.858 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : Supplier
+11:42:34.896 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : User
+11:42:34.960 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+11:42:34.962 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+11:42:34.975 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:42:34.981 [main] DEBUG org.hibernate.internal.NamedQueryRepository - Checking 0 named HQL queries
+11:42:34.981 [main] DEBUG org.hibernate.internal.NamedQueryRepository - Checking 0 named SQL queries
+11:42:34.995 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6134ac4a
+11:42:34.995 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 9fba0ad0-204f-44ef-aeeb-e281918b47f2 (&lt;unnamed&gt;)
+11:42:34.996 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+Objects created successfully
+Create category
+11:42:35.987 [main] DEBUG com.niit.dao.CategoryDAOImpl - Starting of the Method insertCategory
+11:42:36.325 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+11:42:36.327 [main] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+11:42:36.377 [main] DEBUG org.hibernate.event.internal.AbstractSaveEventListener - Generated identifier: cat005, using strategy: org.hibernate.id.Assigned
+11:42:36.454 [main] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+11:42:36.459 [main] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+11:42:36.463 [main] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+11:42:36.470 [main] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+11:42:36.471 [main] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+11:42:36.504 [main] DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+11:42:36.505 [main] DEBUG org.hibernate.internal.util.EntityPrinter - com.niit.model.Category{categorydescription=this is indian wear, categoryname=asasa, categoryid=cat005}
+11:42:36.581 [main] DEBUG org.hibernate.SQL - insert into Category (categorydescription, categoryname, categoryid) values (?, ?, ?)
+Hibernate: insert into Category (categorydescription, categoryname, categoryid) values (?, ?, ?)
+11:42:36.648 [main] DEBUG org.hibernate.engine.jdbc.spi.SqlExceptionHelper - could not execute statement [n/a]
+org.h2.jdbc.JdbcSQLException: Unique index or primary key violation: &quot;PRIMARY_KEY_3 ON PUBLIC.CATEGORY(CATEGORYID) VALUES (&apos;cat005&apos;, 25)&quot;; SQL statement:
+insert into Category (categorydescription, categoryname, categoryid) values (?, ?, ?) [23505-191]
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:624)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:160)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:146)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at com.niit.dao.CategoryDAOImpl.insertCategory(CategoryDAOImpl.java:37)
+	at com.niit.elegantoutfitsbackend.CategoryTestCase.createCategoryTestCase(CategoryTestCase.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+11:42:36.652 [main] WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 23505, SQLState: 23505
+11:42:36.653 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: &quot;PRIMARY_KEY_3 ON PUBLIC.CATEGORY(CATEGORYID) VALUES (&apos;cat005&apos;, 25)&quot;; SQL statement:
+insert into Category (categorydescription, categoryname, categoryid) values (?, ?, ?) [23505-191]
+11:42:36.668 [main] INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+11:42:36.672 [main] ERROR org.hibernate.internal.SessionImpl - HHH000346: Error during managed flush [could not execute statement]
+11:42:36.673 [main] DEBUG org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl - JDBC transaction marked for rollback-only (exception provided for stack trace)
+java.lang.Exception: exception just for purpose of providing stack trace
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.markRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:265)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:156)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at com.niit.dao.CategoryDAOImpl.insertCategory(CategoryDAOImpl.java:37)
+	at com.niit.elegantoutfitsbackend.CategoryTestCase.createCategoryTestCase(CategoryTestCase.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-out>
+    <system-err>Dec 07, 2016 11:42:21 AM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2471cca7: startup date [Wed Dec 07 11:42:21 IST 2016]; root of context hierarchy
+Dec 07, 2016 11:42:24 AM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: org.h2.Driver
+Dec 07, 2016 11:42:35 AM org.springframework.orm.hibernate5.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3541cb24] of Hibernate SessionFactory for HibernateTransactionManager
+org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:207)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2921)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3421)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:560)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:434)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1295)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:468)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3135)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2352)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65)
+	at com.niit.dao.CategoryDAOImpl.insertCategory(CategoryDAOImpl.java:37)
+	at com.niit.elegantoutfitsbackend.CategoryTestCase.createCategoryTestCase(CategoryTestCase.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.h2.jdbc.JdbcSQLException: Unique index or primary key violation: &quot;PRIMARY_KEY_3 ON PUBLIC.CATEGORY(CATEGORYID) VALUES (&apos;cat005&apos;, 25)&quot;; SQL statement:
+insert into Category (categorydescription, categoryname, categoryid) values (?, ?, ?) [23505-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:103)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:231)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:190)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:704)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:156)
+	at org.h2.command.dml.Insert.update(Insert.java:114)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:344)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:158)
+	at java.lang.Thread.run(Unknown Source)
+
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:624)
+	at org.h2.command.CommandRemote.executeUpdate(CommandRemote.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:160)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:146)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	... 49 more
+</system-err>
+  </testcase>
+  <testcase classname="com.niit.elegantoutfitsbackend.CategoryTestCase" name="getCategoryTestCase" time="0.198"/>
+  <testcase classname="com.niit.elegantoutfitsbackend.CategoryTestCase" name="getAllCategoryTestCase" time="0.812">
+    <failure message="Get All Category Test Case expected:&lt;4&gt; but was:&lt;5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Get All Category Test Case expected:&lt;4&gt; but was:&lt;5&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at com.niit.elegantoutfitsbackend.CategoryTestCase.getAllCategoryTestCase(CategoryTestCase.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>11:42:37.070 [main] DEBUG com.niit.dao.CategoryDAOImpl - Starting of the Method getCategory
+11:42:37.159 [main] DEBUG org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@534ca02b
+11:42:37.160 [main] INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+11:42:37.340 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: from com.niit.model.Category
+11:42:37.371 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: &apos;query&apos;
+    \-[SELECT_FROM] Node: &apos;SELECT_FROM&apos;
+       \-[FROM] Node: &apos;from&apos;
+          \-[RANGE] Node: &apos;RANGE&apos;
+             \-[DOT] Node: &apos;.&apos;
+                +-[DOT] Node: &apos;.&apos;
+                |  +-[DOT] Node: &apos;.&apos;
+                |  |  +-[IDENT] Node: &apos;com&apos;
+                |  |  \-[IDENT] Node: &apos;niit&apos;
+                |  \-[IDENT] Node: &apos;model&apos;
+                \-[IDENT] Node: &apos;Category&apos;
+
+11:42:37.372 [main] DEBUG org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+11:42:37.519 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select &lt;&lt; begin [level=1, statement=select]
+11:42:37.602 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : com.niit.model.Category (&lt;no alias&gt;) -&gt; category0_
+11:42:37.604 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+11:42:37.605 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} Category category0_ ) )
+11:42:37.650 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+11:42:37.685 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Category category0_]
+11:42:37.686 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select &gt;&gt; end [level=1, statement=select]
+11:42:37.689 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: &apos;SELECT&apos;  querySpaces (Category)
+    +-[SELECT_CLAUSE] SelectClause: &apos;{derived select clause}&apos;
+    |  +-[SELECT_EXPR] SelectExpressionImpl: &apos;category0_.categoryid as category1_0_&apos; {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Category,tableAlias=category0_,origin=null,columns={,className=com.niit.model.Category}}}
+    |  \-[SQL_TOKEN] SqlFragment: &apos;category0_.categorydescription as category2_0_, category0_.categoryname as category3_0_&apos;
+    \-[FROM] FromClause: &apos;from&apos; FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[category0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: &apos;Category category0_&apos; FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Category,tableAlias=category0_,origin=null,columns={,className=com.niit.model.Category}}
+
+11:42:37.690 [main] DEBUG org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+11:42:37.718 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: from com.niit.model.Category
+11:42:37.718 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select category0_.categoryid as category1_0_, category0_.categorydescription as category2_0_, category0_.categoryname as category3_0_ from Category category0_
+11:42:37.718 [main] DEBUG org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+11:42:37.772 [main] DEBUG org.hibernate.SQL - select category0_.categoryid as category1_0_, category0_.categorydescription as category2_0_, category0_.categoryname as category3_0_ from Category category0_
+Hibernate: select category0_.categoryid as category1_0_, category0_.categorydescription as category2_0_, category0_.categoryname as category3_0_ from Category category0_
+11:42:37.790 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+11:42:37.810 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.niit.model.Category#cat001]
+11:42:37.817 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+11:42:37.818 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.niit.model.Category#cat002]
+11:42:37.819 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+11:42:37.819 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.niit.model.Category#cat005]
+11:42:37.820 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+11:42:37.820 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.niit.model.Category#cat006]
+11:42:37.821 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+11:42:37.822 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.niit.model.Category#cat004]
+11:42:37.823 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.niit.model.Category#cat001]
+11:42:37.825 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.niit.model.Category#cat001]
+11:42:37.826 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.niit.model.Category#cat002]
+11:42:37.827 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.niit.model.Category#cat002]
+11:42:37.828 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.niit.model.Category#cat005]
+11:42:37.828 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.niit.model.Category#cat005]
+11:42:37.828 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.niit.model.Category#cat006]
+11:42:37.829 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.niit.model.Category#cat006]
+11:42:37.829 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [com.niit.model.Category#cat004]
+11:42:37.830 [main] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [com.niit.model.Category#cat004]
+11:42:37.866 [main] DEBUG com.niit.dao.CategoryDAOImpl - Ending of the Method getCategory
+</system-out>
+  </testcase>
+  <testcase classname="com.niit.elegantoutfitsbackend.CategoryTestCase" name="deleteCategoryTestCase" time="0.039">
+    <failure message="Delete Category Test Case expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Delete Category Test Case expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at com.niit.elegantoutfitsbackend.CategoryTestCase.deleteCategoryTestCase(CategoryTestCase.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>deletecat003
+11:42:37.872 [main] DEBUG com.niit.dao.CategoryDAOImpl - Starting of the Method deleteCategory
+11:42:37.873 [main] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+11:42:37.896 [main] DEBUG org.hibernate.SQL - select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+Hibernate: select category0_.categoryid as category1_0_0_, category0_.categorydescription as category2_0_0_, category0_.categoryname as category3_0_0_ from Category category0_ where category0_.categoryid=?
+11:42:37.899 [main] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - HHH000387: ResultSet&apos;s statement was not registered
+11:42:37.901 [main] DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader - Done entity load : com.niit.model.Category#cat003
+Delete method:null
+</system-out>
+    <system-err>java.lang.IllegalArgumentException: attempt to create delete event with null entity
+	at org.hibernate.event.spi.DeleteEvent.&lt;init&gt;(DeleteEvent.java:31)
+	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:863)
+	at com.niit.dao.CategoryDAOImpl.deleteCategory(CategoryDAOImpl.java:123)
+	at com.niit.elegantoutfitsbackend.CategoryTestCase.deleteCategoryTestCase(CategoryTestCase.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-err>
+  </testcase>
+  <testcase classname="com.niit.elegantoutfitsbackend.CategoryTestCase" name="updateCategorytestCase" time="0.088"/>
+</testsuite>
